@@ -23,11 +23,19 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-        <div>
+    <header class="flex justify-sb bkgrd-grey align-i-c">
+        <div class="title">
           <h1>Lexis von Seggern</h1>
+          <p>Student @ OCS</p>
         </div>
-        <nav>
+        <div class="main-nav">
+          <ul>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div>
           <ul class="main-nav">
             <li><a href="#">Articles</a></li>
             <li><a href="#">About</a></li>
@@ -35,14 +43,30 @@
           <div class="mobile-btn-wrapper">
             <a class="mobile-nav-btn" href="#"><i aria-hidden="true" class="fa fa-bars"></i></a>
           </div>
-        </nav>
+        </div>
       </header>
       <div class="mobile-nav">
-        <ul>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
+        <div class="flex justify-sb">
+            <ul>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+        </div>
       </div>
+      
+      <article class="wrapper">
+        <section>
+          <header>
+            <h2>This is content</h2>
+            <p>Blog street art heirloom activated charcoal. Skateboard slow-carb next level, +1 enamel pin la croix mumblecore brooklyn. Everyday carry offal retro ethical raw denim slow-carb. Succulents kale chips craft beer bespoke meditation affogato cronut enamel pin shaman street art. Art party pinterest health goth swag. Waistcoat 8-bit butcher, VHS tilde vegan subway tile freegan umami cardigan knausgaard. Four dollar toast 3 wolf moon flexitarian, DIY vice beard iceland lo-fi pour-over you probably haven't heard of them salvia letterpress bespoke pitchfork poutine. Crucifix keytar mumblecore synth ramps. Church-key intelligentsia before they sold out tote bag, direct trade small batch man braid authentic iPhone scenester literally vinyl vape kale chips.</p>
+          </header>
+        </section>
+      </article>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

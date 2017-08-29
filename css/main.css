@@ -50,26 +50,15 @@ ul {
 /*-- 2.1 - Main Menu --*/
 li {
 	display: inline;
+	padding: 10px;
 }
-.mobile-nav {
+.mobile-nav, .mobile-btn-wrapper {
 	display: none;
 }
-.mobile-nav-btn, .mobile-nav-btn-active {
-  	top: 7px;
-  	right: 15px;
-  	z-index: 1;
+.mobile-nav-btn {
+	display: block;
   	font-size: 1.5rem;
 }
-.mobile-nav-btn, .mobile-nav-btn-active {
-  	display: block;
-}
-.mobile-nav-btn, .mobile-nav-btn-active {
-  	position: absolute;
-}
-.mobile-btn-wrapper {
-	display: none;
-}
-
 /*-- 2.2 - Footer Menu --*/
 
 /*--------------------------------------------------------------
@@ -77,6 +66,13 @@ li {
 -------------------------------------------------------------- */
 
 /*-- 3.1 - Site Structure --*/
+.wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+header, .mobile-nav {
+	padding: 20px;
+}
 /*-- 3.2 - Columns --*/
 /*--------------------------------------------------------------
 4.0 - MEDIA
@@ -86,9 +82,27 @@ li {
 -------------------------------------------------------------- */
 
 /*-- 5.1 - Background Colors --*/
+.title, header a {
+	color: #e6e6e6;
+}
+.mobile-nav {
+	background-color: #F4F2F0;
+}
+.bkgrd-grey {
+	background-color: #404040;
+}
 /*-- 5.2 - Alignments --*/
 .flex {
 	display: flex;
+}
+.justify-sb {
+	justify-content: space-between;
+}
+.justify-sa {
+	justify-content: space-around;
+}
+.align-i-c {
+	align-items: center;
 }
 /*-- 5.3 - Breakpoints --*/
 	
@@ -98,7 +112,6 @@ li {
 		display: flex;
 		justify-content: flex-end;
 	}
-
 	.main-nav {
 		display: none;
 	}
