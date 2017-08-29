@@ -48,32 +48,28 @@ ul {
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
 /*-- 2.1 - Main Menu --*/
+li {
+	display: inline;
+}
 .mobile-nav {
-  top: -220px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 220px;
-  transition: top .75s ease;
+	display: none;
 }
 .mobile-nav-btn, .mobile-nav-btn-active {
-  top: 7px;
-  right: 15px;
-  z-index: 1;
-  font-size: 1.5rem;
+  	top: 7px;
+  	right: 15px;
+  	z-index: 1;
+  	font-size: 1.5rem;
 }
 .mobile-nav-btn, .mobile-nav-btn-active {
-  display: block;
+  	display: block;
 }
-.mobile-nav, .mobile-nav-btn, .mobile-nav-btn-active {
-  position: absolute;
+.mobile-nav-btn, .mobile-nav-btn-active {
+  	position: absolute;
 }
-.hide {
-  display: none;
+.mobile-btn-wrapper {
+	display: none;
 }
-.show {
-  top: 80px;
-}
+
 /*-- 2.2 - Footer Menu --*/
 
 /*--------------------------------------------------------------
@@ -97,6 +93,13 @@ ul {
 /*-- 5.3 - Breakpoints --*/
 	
 
-@media (min-width: 800px) {
+@media screen and (max-width: 800px) {
+	.mobile-btn-wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
 
+	.main-nav {
+		display: none;
+	}
 }
