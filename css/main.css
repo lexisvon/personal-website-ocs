@@ -12,6 +12,7 @@ html * {
 body {
   font-family:'Futura', Sans-Serif;
   font-size: 16px;
+  width: 100%;
 }
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -38,12 +39,41 @@ body {
 -------------------------------------------------------------- */
 /*-- 1.1 - Headings --*/
 /*-- 1.2 - Body Copy --*/
+ul {
+	list-style-type: none;
+}
 /*-- 1.3 - Buttons --*/
 /*-- 1.4 - Forms --*/
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
 /*-- 2.1 - Main Menu --*/
+.mobile-nav {
+  top: -220px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  transition: top .75s ease;
+}
+.mobile-nav-btn, .mobile-nav-btn-active {
+  top: 7px;
+  right: 15px;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.mobile-nav-btn, .mobile-nav-btn-active {
+  display: block;
+}
+.mobile-nav, .mobile-nav-btn, .mobile-nav-btn-active {
+  position: absolute;
+}
+.hide {
+  display: none;
+}
+.show {
+  top: 80px;
+}
 /*-- 2.2 - Footer Menu --*/
 
 /*--------------------------------------------------------------
@@ -61,6 +91,12 @@ body {
 
 /*-- 5.1 - Background Colors --*/
 /*-- 5.2 - Alignments --*/
+.flex {
+	display: flex;
+}
 /*-- 5.3 - Breakpoints --*/
+	
 
+@media (min-width: 800px) {
 
+}
