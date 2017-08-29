@@ -30,19 +30,26 @@ body {
   3.2 - Columns / Widths
 4.0 - Media
 5.0 - Utility
-  5.1 - Background Colors
+  5.1 - Background Colors/Colors
   5.2 - Alignments
   5.3 - Breakpoints
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+.fa-twitter, .fa-github, .fa-rss {
+	font-size: 1.5rem;
+}
 /*-- 1.1 - Headings --*/
 /*-- 1.2 - Body Copy --*/
 ul {
 	list-style-type: none;
 }
 /*-- 1.3 - Buttons --*/
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
 /*-- 1.4 - Forms --*/
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
@@ -60,11 +67,9 @@ li {
   	font-size: 1.5rem;
 }
 /*-- 2.2 - Footer Menu --*/
-
 /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
-
 /*-- 3.1 - Site Structure --*/
 .wrapper {
 	width: 85%;
@@ -81,9 +86,24 @@ header, .mobile-nav {
 5.0 - UTILITY
 -------------------------------------------------------------- */
 
-/*-- 5.1 - Background Colors --*/
-.title, header a {
+/*-- 5.1 - Background Colors/Colors --*/
+.title, body > header a {
 	color: #e6e6e6;
+}
+i {
+	color: #CCCCCC;
+}
+.fa-twitter:hover {
+	color: #1DA1F2;
+}
+.fa-github:hover, .mobile-nav a {
+	color: #404040;
+}
+.fa-rss:hover {
+	color: #FF6600;
+}
+h2:hover, .main-nav a:hover, .mobile-nav a:hover, .fa-bars:hover {
+	color: #4FAF7D;
 }
 .mobile-nav {
 	background-color: #F4F2F0;
