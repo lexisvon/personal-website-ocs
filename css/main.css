@@ -10,7 +10,7 @@ html * {
 }
 
 body {
-  font-family:'Futura', Sans-Serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   width: 100%;
 }
@@ -37,10 +37,16 @@ body {
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-.fa-twitter, .fa-github, .fa-rss {
+.fa {
 	font-size: 1.5rem;
 }
+h1, .mobile-nav a, .main-nav a {
+	text-transform: uppercase;
+}
 /*-- 1.1 - Headings --*/
+h1 {
+	font-size: 1.5rem;
+}
 /*-- 1.2 - Body Copy --*/
 ul {
 	list-style-type: none;
@@ -59,13 +65,15 @@ li {
 	display: inline;
 	padding: 10px;
 }
-.mobile-nav, .mobile-btn-wrapper {
+.mobile-btn-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+.main-nav, .mobile-nav {
 	display: none;
 }
-.mobile-nav-btn {
-	display: block;
-  	font-size: 1.5rem;
-}
+
+
 /*-- 2.2 - Footer Menu --*/
 /*--------------------------------------------------------------
 3.0 - CONTENT
@@ -76,7 +84,7 @@ li {
 	margin: 0 auto;
 }
 header, .mobile-nav {
-	padding: 20px;
+	padding: 15px 20px;
 }
 /*-- 3.2 - Columns --*/
 /*--------------------------------------------------------------
@@ -127,12 +135,20 @@ h2:hover, .main-nav a:hover, .mobile-nav a:hover, .fa-bars:hover {
 /*-- 5.3 - Breakpoints --*/
 	
 
-@media screen and (max-width: 800px) {
+@media (min-width: 800px) {
 	.mobile-btn-wrapper {
-		display: flex;
-		justify-content: flex-end;
-	}
-	.main-nav {
 		display: none;
 	}
+	.main-nav {
+		display: block;
+	}
+	.bkgrd-grey {
+		background-color: #F4F2F0;
+	}
+	.title, body > header a {
+		color: #404040;
+		font-size: .9rem;
+	}
+	
+
 }
