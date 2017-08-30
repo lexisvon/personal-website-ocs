@@ -13,7 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  width: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*--------------------------------------------------------------
@@ -92,7 +92,6 @@ a {
 .article-preview-title {
 	display: block;
     font-size: 1.6em;
-    line-height: 1.1;
     margin: .667em 0 .333em;
     -webkit-transition: color .2s cubic-bezier(.4,0,.2,1);
     transition: color .2s cubic-bezier(.4,0,.2,1);
@@ -164,8 +163,11 @@ i {
 .fa-linkedin:hover {
 	color: #0077B5;
 }
-.main-nav a:hover, .mobile-nav a:hover, .fa-bars:hover, .title a:hover, main a:hover {
+.main-nav a:hover, .mobile-nav a:hover, .fa-bars:hover, .title a:hover, .article-item:hover .article-preview-title {
 	color: #4FAF7D;
+}
+.article-item a {
+	background-color: transparent;
 }
 .mobile-nav {
 	background-color: #F4F2F0;
