@@ -158,6 +158,19 @@ header, .mobile-nav {
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
+.about-img {
+	background: url(../img/selfportrait.jpg) no-repeat;
+}
+.hero-img {
+	background: url(../img/tree.jpg) no-repeat;
+	background-position: 0 -40px;
+}
+.img {
+	max-width: 100%;
+	min-width: 300px;
+	height: 300px;
+	background-size: cover;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
@@ -221,5 +234,26 @@ i {
 		color: #404040;
 		font-size: .9rem;
 	}
+	.wrapper {
+		width: 85%;
+	}
+	.header-content h2 {
+		text-align: center;
+	}
+	.main-nav-fa li:first-child {
+		margin: 0;
+		margin-left: -50px;
+	}
+	.header-content .article-title {
+		text-align: left;
+	}
 
+}
+@media (min-width: 950px) {
+	.wrapper {
+		width: 60%;
+	}
+	.about-img {
+		background-position: 0 -40px;
+	}
 }
