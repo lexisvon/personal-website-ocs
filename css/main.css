@@ -81,8 +81,25 @@ a {
 	text-decoration: none;
 }
 .underline-bb {
-	border-bottom: solid 1px #555;
+	display: inline-block;
+	position: relative;
+	border-bottom: solid 2px #555;
 }
+.underline-bb:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.underline-bb:hover:after {
+	width: 100%;
+	background: #71B6FC;
+}
+
+
 /*-- 1.4 - Forms --*/
 
 /*-- 1.5 - Articles --*/
